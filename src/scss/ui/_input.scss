@@ -1,0 +1,24 @@
+.input {
+  border: 1px solid;
+  padding: 8px 20px;
+  width: 100%;
+  @include border-color('white');
+  @include placeholder-color('white');
+  @include text-color('white');
+
+  &--gray {
+    @include border-color('gray');
+    @include placeholder-color('gray');
+    @include text-color('black');
+  }
+
+  &--white {
+    @include bg-color('white');
+    @include text-color('black');
+    @include placeholder-color('gray');
+  }
+
+  &--large {
+    height: 63px;
+  }
+}

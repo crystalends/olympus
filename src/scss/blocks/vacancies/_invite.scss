@@ -1,0 +1,39 @@
+.invite {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__card {
+    height: 416px;
+    flex: 1 1 380px;
+    min-width: 0;
+
+    &:nth-child(n + 5) {
+      height: 284px;
+
+      @media (max-width: 1425px) {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 1425px) {
+      height: 180px;
+    }
+  }
+
+  &__quick-start {
+    width: 100%;
+    max-width: 213px;
+  }
+}

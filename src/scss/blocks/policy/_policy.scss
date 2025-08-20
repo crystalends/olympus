@@ -1,0 +1,15 @@
+.policy {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1220px;
+  }
+}

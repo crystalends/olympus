@@ -1,0 +1,28 @@
+.objects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__item {
+    width: 100%;
+    min-width: 520px;
+  }
+
+  &__header {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

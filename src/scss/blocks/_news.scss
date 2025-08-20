@@ -1,0 +1,29 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+  }
+
+  &__title {
+    max-width: 773px;
+    width: 100%;
+    font-family: Grtsk Giga Bkslnt, sans-serif;
+    font-weight: 500;
+  }
+
+  &__grid {
+    display: flex;
+    overflow-y: auto;
+    gap: 40px;
+  }
+
+  &__item {
+    min-width: 380px;
+  }
+}

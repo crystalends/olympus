@@ -1,0 +1,55 @@
+.accordion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+
+  @media (max-width: 1425px) {
+    max-width: 100%;
+  }
+
+  &__item {
+    @include bg-color('white');
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      @include bg-color('gray');
+    }
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__content {
+    @include bg-color('white');
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 40px;
+    transition: 0.3s;
+  }
+
+  &__item.open {
+    .accordion__content {
+      max-height: fit-content;
+      opacity: 1;
+      padding: 0 40px 10px 40px;
+    }
+
+    .accordion__header svg {
+      transform: rotate(180deg);
+    }
+  }
+}

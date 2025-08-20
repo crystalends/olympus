@@ -1,0 +1,73 @@
+.real-estate {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+
+  @media (max-width: 1425px) {
+    flex-wrap: wrap;
+  }
+
+  &__detail {
+    display: flex;
+    width: 100%;
+    max-width: 548px;
+    flex-direction: column;
+    gap: 60px;
+
+    @media (max-width: 1425px) {
+      max-width: 100%;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 552px;
+    width: 100%;
+    max-width: 940px;
+
+    @media (max-width: 1425px) {
+      height: 100%;
+    }
+  }
+
+  &__description-preview {
+    display: flex;
+    gap: 40px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 194px;
+      gap: 17px;
+      border-right: 1px solid;
+      @include border-color('black');
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  &__name {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__price {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: bold;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+
+  @media (max-width: 720px) {
+    gap: 60px;
+  }
+}

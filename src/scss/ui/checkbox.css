@@ -1,0 +1,11 @@
+.checkbox {
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+}
+.checkbox:hover {
+  cursor: pointer;
+  background-color: #96004F;
+}
+
+/*# sourceMappingURL=checkbox.css.map */

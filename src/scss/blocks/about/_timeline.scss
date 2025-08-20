@@ -1,0 +1,36 @@
+.timeline {
+  overflow-x: auto;
+  padding: 40px 25px;
+  display: flex;
+  gap: 40px;
+  @include bg-color('white');
+
+  @media (max-width: 1000px) {
+    padding: 25px 10px;
+    gap: 20px;
+  }
+
+  &__point {
+    border-top: 1px solid;
+    padding-top: 10px;
+    @include border-color('gray');
+    cursor: pointer;
+
+    &--active {
+      @include border-color('red');
+    }
+  }
+
+  &__year {
+    font-size: 32px;
+    @include text-color('gray');
+
+    &--active {
+      @include text-color('red');
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 22px;
+    }
+  }
+}

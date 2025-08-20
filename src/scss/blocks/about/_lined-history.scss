@@ -1,0 +1,7 @@
+.lined-history {
+  display: none;
+
+  &--active {
+    display: inherit;
+  }
+}

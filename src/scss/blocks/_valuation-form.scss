@@ -1,0 +1,29 @@
+.valuation-form {
+  padding: 40px;
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+  @include bg-color('white');
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 1425px) {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  &--wrapper {
+    padding: 0px;
+    gap: 40px;
+  }
+
+  &--body {
+    padding: 0px;
+    gap: 10px;
+  }
+
+  &--footer {
+    padding: 0px;
+    gap: 6px;
+  }
+}

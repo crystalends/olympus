@@ -1,0 +1,11 @@
+.real-estate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__objects-viewer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

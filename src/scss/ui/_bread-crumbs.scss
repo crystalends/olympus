@@ -1,0 +1,21 @@
+.bread-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  &__separator {
+    @include text-color('gray');
+  }
+
+  &__item {
+    @include text-color('gray');
+
+    &--active {
+      &--white {
+        @include text-color('white');
+      }
+
+      @include text-color('pink');
+    }
+  }
+}

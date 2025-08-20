@@ -1,0 +1,36 @@
+.object {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include bg-color('white');
+
+  &__data-wrapper {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__image {
+    height: 319px;
+    object-fit: cover;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__name {
+    font-family: "SuisseIntl", sans-serif;
+    font-weight: 500;
+  }
+
+  &__price {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+}

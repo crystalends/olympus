@@ -1,0 +1,22 @@
+.social-network {
+  width: 51px;
+  height: 51px;
+  border-radius: 25.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include bg-color('white');
+  transition: 0.3s ease;
+
+  &:hover {
+    @include bg-color('pink');
+  }
+
+  &--light-pink {
+    @include bg-color('light-pink');
+
+    &:hover {
+      @include bg-color('white');
+    }
+  }
+}

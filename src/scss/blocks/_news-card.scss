@@ -1,0 +1,40 @@
+.news-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  @include text-color('black');
+  @include bg-color('white');
+
+  &__img {
+    width: 100%;
+    height: 321px;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 20px;
+  }
+
+  &__meta {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__read-by-time-container {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__read-by-time {
+    @include text-color('gray')
+  }
+}

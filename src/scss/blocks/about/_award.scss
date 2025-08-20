@@ -1,0 +1,21 @@
+.award {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 27px 25px;
+  @include bg-color('white');
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}

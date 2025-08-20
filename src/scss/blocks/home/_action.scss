@@ -1,0 +1,22 @@
+.action {
+  max-width: 195px;
+  width: 100%;
+  min-width: 195px;
+  padding: 20px;
+  @include backdrop-blur();
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+
+  &__title {
+    @include text-color('white');
+    font-family: Grtsk Giga Bkslnt, sans-serif;
+    font-weight: normal;
+  }
+
+  @media (max-width: 720px) {
+    height: 180px;
+  }
+}

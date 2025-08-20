@@ -1,0 +1,38 @@
+.agent {
+  @include bg-color('white');
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__name {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    height: 402px;
+    object-fit: cover;
+  }
+
+  &__detail {
+    width: 100%;
+    max-width: 283px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__data-wrapper {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

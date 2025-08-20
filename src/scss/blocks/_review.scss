@@ -1,0 +1,18 @@
+.review {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  @include bg-color('white');
+  padding: 30px 20px;
+
+  &__title {
+    width: 100%;
+    font-weight: 450;
+    max-width: 325px;
+  }
+
+  &__description {
+    font-size: 16px;
+  }
+}

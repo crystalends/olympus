@@ -1,0 +1,20 @@
+.agents {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: bold;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+
+    @media (max-width: 380px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

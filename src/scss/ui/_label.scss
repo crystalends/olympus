@@ -1,0 +1,14 @@
+.label {
+  @include text-color('gray');
+
+  &--white {
+    @include text-color('white');
+  }
+
+  &--in-input {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}

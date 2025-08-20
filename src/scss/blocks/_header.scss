@@ -1,0 +1,32 @@
+.header {
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  @include backdrop-blur();
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  &--dark {
+    @include backdrop-blur(60px, #00000033);
+  }
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+
+    &--primary {
+      display: none;
+
+      @media (min-width: 1425px) {
+        display: flex;
+      }
+    }
+  }
+
+  &__link {
+    @include text-color('white');
+    height: fit-content;
+  }
+}

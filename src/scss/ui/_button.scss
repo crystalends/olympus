@@ -1,0 +1,134 @@
+.button {
+  padding: 10px 20px;
+  min-width: 205px;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  @include bg-color('red');
+  @include border-color('red');
+  @include text-color('white');
+
+  &:hover {
+    @include bg-color('dark-red');
+    @include border-color('dark-red');
+  }
+
+  &--outline-black {
+    background-color: transparent;
+    @include border-color('black');
+    @include text-color('black');
+
+    &:hover {
+      background-color: transparent;
+      @include border-color('red');
+      @include text-color('red');
+    }
+  }
+
+  &--outline-white {
+    background-color: transparent;
+    @include border-color('white');
+    @include text-color('white');
+
+    &:hover {
+      @include bg-color('red');
+    }
+  }
+
+  &--outline-red {
+    background-color: transparent;
+    @include border-color('red');
+    @include text-color('red');
+
+    &:hover {
+      background-color: transparent;
+      @include border-color('black');
+      @include text-color('black');
+    }
+  }
+
+  &--white {
+    @include bg-color('white');
+    @include border-color('white');
+    @include text-color('red');
+
+    &:hover {
+      @include text-color('white');
+    }
+  }
+
+  &--dark-gray {
+    @include bg-color('dark-gray');
+    @include border-color('dark-gray');
+    @include text-color('black');
+
+    &:hover {
+      @include bg-color('black');
+      @include border-color('black');
+      @include text-color('white');
+    }
+  }
+
+  &--small {
+    padding: 10px 30px;
+    font-size: 14px;
+    min-width: auto;
+  }
+
+  &--large {
+    padding: 22px 40px;
+    font-size: 16px;
+    min-width: 379px;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--full-height {
+    height: 100%;
+  }
+
+  &--icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    min-width: 40px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 100%;
+    min-width: auto;
+
+    &--large {
+      padding: 14px 20px;
+      font-size: 15px;
+      min-width: auto;
+    }
+
+    &--small {
+      padding: 8px 14px;
+      font-size: 13px;
+    }
+
+    &--icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      min-width: 40px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.action-form {
+  @include backdrop-blur();
+  display: flex;
+  width: 100%;
+  max-width: 520px;
+  padding: 40px;
+  flex-direction: column;
+  gap: 12px;
+
+  &__title {
+    @include text-color('white')
+  }
+
+  @media (max-width: 1425px) {
+    max-width: 100%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,120 @@
+.mortgage {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__fact {
+    height: 261px;
+  }
+
+  &__fact-title {
+    width: 100%;
+    max-width: 828px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: bold;
+  }
+
+  &__calculator {
+    @include bg-color('red');
+    padding: 50px 40px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__values {
+    display: flex;
+    gap: 60px;
+
+    @media (max-width: 1425px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__price {
+    display: flex;
+    gap: 1px;
+  }
+
+  &__modifiers {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 1425px) {
+      max-width: 100%;
+    }
+
+    &-title {
+      @include text-color('white');
+    }
+  }
+
+  &__estimation {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 1425px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__modifier {
+    display: flex;
+    justify-content: space-between;
+
+    &-name {
+      @include text-color('white');
+    }
+
+    &-value {
+      @include text-color('white');
+    }
+
+    &-right-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__factor {
+    @include text-color('white');
+  }
+
+  &__subtotal {
+    justify-content: space-between;
+    display: flex;
+    gap: 40px;
+    align-items: end;
+  }
+
+  &__sum {
+    font-size: 24px;
+    @include text-color('white');
+  }
+
+  &__result {
+    display: flex;
+    width: 100%;
+    max-width: 460px;
+    flex-direction: column;
+    gap: 21px;
+
+    @media (max-width: 1425px) {
+      max-width: 100%;
+    }
+  }
+}

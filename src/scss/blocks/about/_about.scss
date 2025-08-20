@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: bold;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 1019px;
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 370px;
+  }
+}

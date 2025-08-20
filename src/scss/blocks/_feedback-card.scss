@@ -1,0 +1,37 @@
+.feedback-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding: 40px;
+  @include bg-color('white');
+
+  &__title {
+    font-family: Grtsk Giga Bkslnt, sans-serif;
+    font-weight: 500;
+
+    &--small {
+      font-size: 24px;
+    }
+  }
+
+  &__multi_pairs {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__pairs-data {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}

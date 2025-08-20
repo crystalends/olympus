@@ -1,0 +1,46 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-weight: bold;
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    @include bg-color('white');
+  }
+
+  &__building-name {
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: 500;
+  }
+
+  &__content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__social-networks {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__content-item {
+    flex: 1 1 520px;
+    min-width: 0;
+  }
+}

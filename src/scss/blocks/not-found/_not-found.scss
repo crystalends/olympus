@@ -1,0 +1,52 @@
+.not-found {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 64vh;
+  min-height: 260px;
+
+  &__bg {
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -30%);
+    font-size: 33vw;
+    font-family: 'Grtsk Giga Bkslnt', sans-serif;
+    font-weight: bold;
+    @include text-color('pink');
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: calc(64vh - 10px);
+    min-height: 250px;
+  }
+
+  &__error {
+    font-size: 24px;
+  }
+
+  &__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    @media (max-width: 720px) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ $colors: (
 
 
 @mixin text-color($name) {
-  color: map-get($colors, $name);
+  color: map-get($colors, $name) !important;
 }
 
 @mixin bg-color($name) {

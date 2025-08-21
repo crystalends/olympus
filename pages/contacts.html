@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <script src="../src/scripts/menu.js" defer></script>
+    <script src="../src/scripts/modal.js" defer></script>
     <link rel="stylesheet" href="../src/scss/contacts.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
             <div class="navigation-wrapper">
                 <header class="header header--dark">
                     <div class="logo">
-                        <a>
+                        <a href="index.html">
                             <svg width="157" height="40" viewBox="0 0 157 40" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M50.6795 0.501785C50.3226 0.507254 49.4544 0.469789 48.216 1.4592C47.6615 1.90386 46.5823 3.59991 46.8908 5.01512C46.9908 5.47728 47.2503 5.84318 47.4289 6.07809C47.9509 6.7552 48.9975 7.17826 49.4735 6.77374C50.0387 6.28921 51.0797 6.35593 51.499 6.10626C51.818 5.92325 52.6565 5.38512 53.1054 4.20073C53.2893 3.71067 54.4117 0.412361 50.6795 0.501785Z"
@@ -38,11 +39,11 @@
                     </div>
                     <nav class="header__navigation">
                         <div class="header__navigation header__navigation--primary">
-                            <a class="header__link">Собственникам</a>
-                            <a class="header__link">Найти недвижимость</a>
-                            <a class="header__link">Коммерческая недвижимость</a>
-                            <a class="header__link">Ипотека</a>
-                            <button class="button">
+                            <a class="header__link" href="owners.html">Собственникам</a>
+                            <a class="header__link" href="base.html">Найти недвижимость</a>
+                            <a class="header__link" href="commercial.html">Коммерческая недвижимость</a>
+                            <a class="header__link" href="mortgage.html">Ипотека</a>
+                            <button class="button" data-modal="modal-call">
                                 Заказать звонок
                             </button>
                         </div>
@@ -55,24 +56,24 @@
                     </nav>
                 </header>
                 <div class="bread-crumbs">
-                    <a class="bread-crumbs__item small-text">Главная</a>
+                    <a class="bread-crumbs__item small-text" href="home.html">Главная</a>
                     <span class="small-text bread-crumbs__separator">-</span>
                     <a class="bread-crumbs__item small-text bread-crumbs__item--active">Контакты</a>
                 </div>
             </div>
             <div class="menu">
                 <nav class="menu__navigation">
-                    <a class="menu__link">Собственникам</a>
-                    <a class="menu__link">Найти недвижимость</a>
-                    <a class="menu__link">Коммерческая недвижимость</a>
-                    <a class="menu__link">Ипотека</a>
+                    <a class="menu__link" href="owners.html">Собственникам</a>
+                    <a class="menu__link" href="base.html">Найти недвижимость</a>
+                    <a class="menu__link" href="commercial.html">Коммерческая недвижимость</a>
+                    <a class="menu__link" href="mortgage.html">Ипотека</a>
                 </nav>
                 <nav class="menu__navigation">
-                    <a class="menu__link">О компании</a>
-                    <a class="menu__link">Агенты</a>
-                    <a class="menu__link">Вакансии</a>
-                    <a class="menu__link">Блог</a>
-                    <a class="menu__link">Контакты</a>
+                    <a class="menu__link" href="about.html">О компании</a>
+                    <a class="menu__link" href="agents.html">Агенты</a>
+                    <a class="menu__link" href="vacancies.html">Вакансии</a>
+                    <a class="menu__link" href="news.html">Блог</a>
+                    <a class="menu__link" href="contacts.html">Контакты</a>
                 </nav>
                 <nav class="menu__navigation menu__navigation--detail">
                     <a class="menu__link">+7 978 701 00 01</a>
@@ -297,6 +298,46 @@
                     </a>
                 </div>
             </footer>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-call">
+    <div class="modal__content">
+        <button class="modal__close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.19566 -1.04622e-06L0 2.19569L17.804 20L19.9997 17.8043L2.19566 -1.04622e-06Z"
+                      fill="#BCBABA"/>
+                <path d="M0.000143748 17.8043L2.1958 20L19.9998 2.19571L17.8042 2.02408e-05L0.000143748 17.8043Z"
+                      fill="#BCBABA"/>
+            </svg>
+        </button>
+        <h2 class="modal__title">Заказать звонок</h2>
+        <div class="form">
+            <div class="form__body">
+                <input type="text" placeholder="Имя" class="input input--gray">
+                <input type="text" placeholder="Телефон" class="input input--gray">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+<path d="M1 5.35922L4.13333 9L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+                    Нажимая кнопку, вы даете согласие на обработку персональных данных,
+                    в соответствии с политикой конфиденциальности
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span><svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                               xmlns="http://www.w3.org/2000/svg">
+<path d="M1 5.35922L4.13333 9L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+                    Согласие на получение рекламных предложений по телефону и email
+                </label>
+            </div>
+            <button class="button button--large button--full-width">Отправить</button>
         </div>
     </div>
 </div>

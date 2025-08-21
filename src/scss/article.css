@@ -584,7 +584,7 @@ ol {
   gap: 40px;
 }
 .promo__fact {
-  height: 320px;
+  min-height: 320px;
   flex: 1 1 520px;
   min-width: 0;
 }
@@ -599,7 +599,7 @@ ol {
   position: absolute;
 }
 .promo__fact-large {
-  max-height: 299px;
+  min-height: 299px;
   height: 100%;
 }
 .promo__fact-description {
@@ -639,6 +639,11 @@ ol {
 }
 .news__item {
   min-width: 380px;
+}
+@media (max-width: 380px) {
+  .news__item {
+    min-width: 100%;
+  }
 }
 
 .news-card {
@@ -757,6 +762,7 @@ ol {
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  min-height: inherit;
   color: #1F0111 !important;
   background-color: #fff;
   justify-content: space-between;

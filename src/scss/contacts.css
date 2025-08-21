@@ -678,6 +678,7 @@ ol {
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  min-height: inherit;
   color: #1F0111 !important;
   background-color: #fff;
   justify-content: space-between;

@@ -816,6 +816,7 @@ ol {
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  min-height: inherit;
   color: #1F0111 !important;
   background-color: #fff;
   justify-content: space-between;
@@ -980,8 +981,12 @@ ol {
   gap: 40px;
 }
 .reviews__item {
-  width: 100%;
   min-width: 520px;
+}
+@media (max-width: 520px) {
+  .reviews__item {
+    min-width: 100%;
+  }
 }
 
 .review {

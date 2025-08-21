@@ -23,7 +23,7 @@
   }
 
   &__fact {
-    height: 320px;
+    min-height: 320px;
     flex: 1 1 520px;
     min-width: 0;
   }
@@ -41,9 +41,10 @@
   }
 
   &__fact-large {
-    max-height: 299px;
+    min-height: 299px;
     height: 100%;
   }
+
 
   &__fact-description {
     max-width: 368px;

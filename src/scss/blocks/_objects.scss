@@ -9,8 +9,11 @@
   }
 
   &__item {
-    width: 100%;
     min-width: 520px;
+
+    @media (max-width: 520px) {
+      min-width: 100%;
+    }
   }
 
   &__header {

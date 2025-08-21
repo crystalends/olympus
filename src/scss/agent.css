@@ -507,8 +507,12 @@ ol {
   gap: 40px;
 }
 .reviews__item {
-  width: 100%;
   min-width: 520px;
+}
+@media (max-width: 520px) {
+  .reviews__item {
+    min-width: 100%;
+  }
 }
 
 .review {
@@ -538,8 +542,12 @@ ol {
   font-weight: 500;
 }
 .objects__item {
-  width: 100%;
   min-width: 520px;
+}
+@media (max-width: 520px) {
+  .objects__item {
+    min-width: 100%;
+  }
 }
 .objects__header {
   display: flex;

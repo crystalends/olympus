@@ -16,28 +16,28 @@
   &__bg {
     position: absolute;
     inset: 0;
-    background: url("./../../public/0c576c6d129d299246b5ab270b7bf61694485343.png") no-repeat center;
+    background: url("./../../public/0c576c6d129d299246b5ab270b7bf61694485343.webp") no-repeat center;
     background-size: cover;
     filter: brightness(0.8);
     z-index: -1;
 
     &--buyers {
-      background: url("./../../public/5e846506353cdc41f0e3af99e5ca39d8751a2760.png") center;
+      background: url("./../../public/5e846506353cdc41f0e3af99e5ca39d8751a2760.webp") center;
       background-size: cover;
     }
 
     &--owners {
-      background: url("./../../public/11235ac25ec930cbeede14e3b546398488350b46.png") center;
+      background: url("./../../public/11235ac25ec930cbeede14e3b546398488350b46.webp") center;
       background-size: cover;
     }
 
     &--commercial {
-      background: url("./../../public/6584dbd0212b96310f39b6b1bfc9c883b6a56166.png") center;
+      background: url("./../../public/6584dbd0212b96310f39b6b1bfc9c883b6a56166.webp") center;
       background-size: cover;
     }
 
     &--vacancies {
-      background: url("./../../public/78cf743d619e8aa0be660f625381dd2b3add4e04.png") center;
+      background: url("./../../public/78cf743d619e8aa0be660f625381dd2b3add4e04.webp") center;
       background-size: cover;
     }
   }

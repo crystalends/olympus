@@ -1,7 +1,8 @@
 .lined-history {
-  display: none;
+  display: none !important;
+  width: 100%;
 
   &--active {
-    display: inherit;
+    display: inherit !important;
   }
 }

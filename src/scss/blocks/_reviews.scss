@@ -1,5 +1,6 @@
 .reviews {
-  display: flex;
+  width: 100%;
+  display: flex !important;
   flex-direction: column;
   gap: 40px;
 
@@ -14,19 +15,5 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-  }
-
-  &__grid {
-    display: flex;
-    overflow-y: auto;
-    gap: 40px;
-  }
-
-  &__item {
-    min-width: 520px;
-
-    @media (max-width: 520px) {
-      min-width: 100%;
-    }
   }
 }

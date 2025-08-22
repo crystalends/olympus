@@ -1,5 +1,6 @@
 .objects {
-  display: flex;
+  width: 100%;
+  display: flex !important;
   flex-direction: column;
   gap: 40px;
 
@@ -20,12 +21,5 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-  }
-
-  &__grid {
-    display: flex;
-    gap: 40px;
-    width: 100%;
-    overflow-x: auto;
   }
 }

@@ -8,6 +8,10 @@
     <title></title>
     <script src="../src/scripts/menu.js" defer></script>
     <script src="../src/scripts/modal.js" defer></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../src/scss/article.css">
 </head>
 <body>
@@ -67,6 +71,7 @@
             <div class="menu">
                 <nav class="menu__navigation">
                     <a class="menu__link" href="owners.html">Собственникам</a>
+                    <a class="menu__link" href="buyers.html">Покупателям</a>
                     <a class="menu__link" href="base.html">Найти недвижимость</a>
                     <a class="menu__link" href="commercial.html">Коммерческая недвижимость</a>
                     <a class="menu__link" href="mortgage.html">Ипотека</a>
@@ -201,96 +206,110 @@
                     </div>
                 </div>
             </section>
-            <section class="news">
-                <h2 class="news__title">Похожие новости</h2>
-                <div class="news__grid">
-                    <div class="news__item">
-                        <div class="news-card">
-                            <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png" class="news-card__img"
-                                 alt="">
-                            <div class="news-card__content">
-                                <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка недвижимости?</a>
-                                <div class="news-card__meta">
+            <section class="swiper swiper__news news">
+                <h2 class="news__title">Актуальные новости и специальные предложения</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news-card">
+                                <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png"
+                                     class="news-card__img"
+                                     alt="">
+                                <div class="news-card__content">
+                                    <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка
+                                        недвижимости?</a>
+                                    <div class="news-card__meta">
                             <span class="news-card__created-at">
                                 2 июня 2025
                             </span>
-                                    <div class="news-card__read-by-time-container">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
-                                                  fill="#BCBABA"/>
-                                        </svg>
-                                        <span class="news-card__read-by-time">3мин</span>
+                                        <div class="news-card__read-by-time-container">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
+                                                      fill="#BCBABA"/>
+                                            </svg>
+                                            <span class="news-card__read-by-time">3мин</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="news__item">
-                        <div class="news-card">
-                            <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png" class="news-card__img"
-                                 alt="">
-                            <div class="news-card__content">
-                                <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка недвижимости?</a>
-                                <div class="news-card__meta">
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news-card">
+                                <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png"
+                                     class="news-card__img"
+                                     alt="">
+                                <div class="news-card__content">
+                                    <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка
+                                        недвижимости?</a>
+                                    <div class="news-card__meta">
                             <span class="news-card__created-at">
                                 2 июня 2025
                             </span>
-                                    <div class="news-card__read-by-time-container">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
-                                                  fill="#BCBABA"/>
-                                        </svg>
-                                        <span class="news-card__read-by-time">3мин</span>
+                                        <div class="news-card__read-by-time-container">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
+                                                      fill="#BCBABA"/>
+                                            </svg>
+                                            <span class="news-card__read-by-time">3мин</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="news__item">
-                        <div class="news-card">
-                            <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png" class="news-card__img"
-                                 alt="">
-                            <div class="news-card__content">
-                                <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка недвижимости?</a>
-                                <div class="news-card__meta">
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="news-card">
+                                <img src="./../public/8e419a1f8642610a19f77dd9e0d6768d2c6ca249.png"
+                                     class="news-card__img"
+                                     alt="">
+                                <div class="news-card__content">
+                                    <a>Биометрия на пороге вашей квартиры: революция или угроза для рынка
+                                        недвижимости?</a>
+                                    <div class="news-card__meta">
                             <span class="news-card__created-at">
                                 2 июня 2025
                             </span>
-                                    <div class="news-card__read-by-time-container">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
-                                                  fill="#BCBABA"/>
-                                        </svg>
-                                        <span class="news-card__read-by-time">3мин</span>
+                                        <div class="news-card__read-by-time-container">
+                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M8.5 0C13.1946 0 17 3.80617 17 8.5C17 13.1946 13.1946 17 8.5 17C3.80543 17 0 13.1946 0 8.5C0 3.80543 3.80543 0 8.5 0ZM12.4842 7.96891H9.03109V3.18708C9.03109 2.48739 7.96823 2.48739 7.96823 3.18708L7.96895 8.5C7.96895 8.79327 8.20675 9.03107 8.50002 9.03107H12.4842C13.1839 9.03107 13.1839 7.96891 12.4842 7.96891ZM13.7596 3.2404C10.855 0.335735 6.14526 0.335735 3.2406 3.2404C0.335938 6.14506 0.335938 10.8548 3.2406 13.7594C6.14526 16.6641 10.855 16.6641 13.7596 13.7594C16.6643 10.8548 16.6643 6.14506 13.7596 3.2404Z"
+                                                      fill="#BCBABA"/>
+                                            </svg>
+                                            <span class="news-card__read-by-time">3мин</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="news__item">
-                        <div class="card">
-                            <div class="card__content">
-                                <h3 class="card__title card__title--suisse-intl-font-family">Больше новостей</h3>
-                            </div>
-                            <div class="card__content card__content--bottom">
-                                <a href="news.html">
-                                    <button class="button button--outline-black">
-                                        Все новости
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="card__absolute-right-top-content">
-                                <svg width="203" height="428" viewBox="0 0 203 428" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M172.377 352.08C184.096 366.984 203 388.142 203 388.142V428C203 428 194.214 418.242 188.617 411.867C172.603 393.629 163.507 382.502 148.3 363.901L146.394 361.57C126.843 337.658 115.517 325.338 96.7481 298.936C82.0274 278.229 74.2184 265.32 60.0935 242.945C45.0142 219.057 35.9441 207.029 22.0469 180.31C16.4456 169.541 12.7267 164.439 8.12747 151.84C4.72519 142.52 1.87161 137.601 0.703749 126.217C-0.040473 118.963 -0.410615 114.29 0.703749 107.237C1.63109 101.368 2.70638 98.2277 4.87959 93.9512C8.15441 87.5069 11.2313 87.3466 15.5512 84.4612C20.6521 81.0541 23.6725 79.9601 29.0067 78.7672C37.4801 76.8722 42.3105 79.4522 50.8138 80.6652C65.0064 82.6897 72.8956 85.4623 87.0044 89.2062C104.259 93.785 113.845 97.6467 131.083 102.492C148.094 107.274 157.532 113.011 174.697 113.88C178.863 114.091 181.201 113.88 185.369 113.88H189.081C189.081 113.88 157.347 87.5795 137.115 70.2262C105.98 43.5215 57.7736 0 57.7736 0H109.276L203 78.7672V197C203 197 170.904 191.186 151.034 186.004C132.121 181.072 120.208 177.95 100.46 172.718C83.7878 168.302 60.5574 161.33 60.5574 161.33C60.5574 161.33 52.7283 158.483 49.4218 158.483C48.4938 158.483 57.0781 174.992 61.9494 185.055C75.1552 212.336 83.7255 225.236 98.604 248.639C113.984 272.83 123.418 284.132 139.434 306.528C152.254 324.453 159.19 335.307 172.377 352.08Z"
-                                          fill="#F9EEF4"/>
-                                </svg>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <div class="card">
+                                <div class="card__content">
+                                    <h3 class="card__title card__title--suisse-intl-font-family">Больше новостей</h3>
+                                </div>
+                                <div class="card__content card__content--bottom">
+                                    <a href="news.html">
+                                        <button class="button button--outline-black">
+                                            Все новости
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="card__absolute-right-top-content">
+                                    <svg width="203" height="428" viewBox="0 0 203 428" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M172.377 352.08C184.096 366.984 203 388.142 203 388.142V428C203 428 194.214 418.242 188.617 411.867C172.603 393.629 163.507 382.502 148.3 363.901L146.394 361.57C126.843 337.658 115.517 325.338 96.7481 298.936C82.0274 278.229 74.2184 265.32 60.0935 242.945C45.0142 219.057 35.9441 207.029 22.0469 180.31C16.4456 169.541 12.7267 164.439 8.12747 151.84C4.72519 142.52 1.87161 137.601 0.703749 126.217C-0.040473 118.963 -0.410615 114.29 0.703749 107.237C1.63109 101.368 2.70638 98.2277 4.87959 93.9512C8.15441 87.5069 11.2313 87.3466 15.5512 84.4612C20.6521 81.0541 23.6725 79.9601 29.0067 78.7672C37.4801 76.8722 42.3105 79.4522 50.8138 80.6652C65.0064 82.6897 72.8956 85.4623 87.0044 89.2062C104.259 93.785 113.845 97.6467 131.083 102.492C148.094 107.274 157.532 113.011 174.697 113.88C178.863 114.091 181.201 113.88 185.369 113.88H189.081C189.081 113.88 157.347 87.5795 137.115 70.2262C105.98 43.5215 57.7736 0 57.7736 0H109.276L203 78.7672V197C203 197 170.904 191.186 151.034 186.004C132.121 181.072 120.208 177.95 100.46 172.718C83.7878 168.302 60.5574 161.33 60.5574 161.33C60.5574 161.33 52.7283 158.483 49.4218 158.483C48.4938 158.483 57.0781 174.992 61.9494 185.055C75.1552 212.336 83.7255 225.236 98.604 248.639C113.984 272.83 123.418 284.132 139.434 306.528C152.254 324.453 159.19 335.307 172.377 352.08Z"
+                                              fill="#F9EEF4"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,6 +363,7 @@
                     </div>
                     <div class="footer__col-container footer__col-container__navigation">
                         <a class="small-text" href="owners.html">Собственникам</a>
+                        <a class="small-text" href="buyers.html">Покупателям</a>
                         <a class="small-text" href="base.html">Найти недвижимость</a>
                         <a class="small-text" href="commercial.html">Коммерческая недвижимость</a>
                         <a class="small-text" href="mortgage.html">Ипотека</a>
@@ -431,5 +451,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../src/scripts/swipers/news.js"></script>
 </body>
 </html>

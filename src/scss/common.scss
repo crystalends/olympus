@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'SuisseIntl';
-  src: url('./../../public/fonts/suisseintl.woff2') format('woff2');
+  src: url('./../../public/fonts/Suisseintl-Regular.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: 'SuisseIntl';
-  src: url('./../../public/fonts/suisseintl-Medium.ttf');
+  src: url('./../../public/fonts/Suisseintl-Medium.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'Grtsk Giga Bkslnt';
-  src: url('./../../public/fonts/GrtskGiga-Regular.woff2') format('woff2');
+  src: url('./../../public/fonts/GrtskGiga-Regular.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: 'Grtsk Giga Bkslnt';
-  src: url('./../../public/fonts/GrtskGiga-Bold.woff2') format('woff2');
+  src: url('./../../public/fonts/GrtskGiga-Bold.ttf');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: 'Grtsk Giga Bkslnt';
-  src: url('./../../public/fonts/GrtskGiga-Medium.woff2') format('woff2');
+  src: url('./../../public/fonts/GrtskGiga-Medium.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -48,9 +48,9 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-weight: 400;
   letter-spacing: 0.75px;
   font-family: 'SuisseIntl', sans-serif;
+  font-weight: normal;
 }
 
 html {

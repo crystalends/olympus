@@ -1,5 +1,6 @@
 .team {
-  display: flex;
+  display: flex !important;
+  width: 100%;
   gap: 40px;
   flex-direction: column;
 
@@ -12,12 +13,6 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
-  }
-
-  &__grid {
-    display: flex;
-    gap: 40px;
-    overflow: auto;
   }
 
   &__item {

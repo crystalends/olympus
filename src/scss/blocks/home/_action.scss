@@ -13,7 +13,7 @@
   &__title {
     @include text-color('white');
     font-family: Grtsk Giga Bkslnt, sans-serif;
-    font-weight: 400;
+    font-weight: normal;
   }
 
   @media (max-width: 720px) {

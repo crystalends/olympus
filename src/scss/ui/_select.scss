@@ -4,7 +4,6 @@
   width: 100%;
   max-width: 380px;
   height: 39px;
-  cursor: pointer;
 
   &--small {
     width: 100%;
@@ -18,6 +17,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
+    cursor: pointer;
 
     &--small {
       border: 1px solid;
@@ -53,6 +53,7 @@
 
   &__option {
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       @include bg-color('gray');

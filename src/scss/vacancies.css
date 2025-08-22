@@ -902,7 +902,6 @@ ol {
   width: 100%;
   max-width: 380px;
   height: 39px;
-  cursor: pointer;
 }
 .select--small {
   width: 100%;
@@ -915,6 +914,7 @@ ol {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
+  cursor: pointer;
 }
 .select__trigger--small {
   border: 1px solid;
@@ -946,6 +946,7 @@ ol {
 }
 .select__option {
   transition: 0.3s;
+  cursor: pointer;
 }
 .select__option:hover {
   background-color: #BCBABA;

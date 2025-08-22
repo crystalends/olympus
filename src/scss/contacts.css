@@ -954,4 +954,9 @@ ol {
   }
 }
 
+.map {
+  width: 100%;
+  min-height: 535px;
+}
+
 /*# sourceMappingURL=contacts.css.map */

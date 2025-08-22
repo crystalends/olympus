@@ -25,6 +25,13 @@
       padding: 8px 20px;
       width: 100%;
     }
+
+    &--large {
+      gap: 14px;
+      background-color: transparent;
+      padding: initial;
+      width: fit-content;
+    }
   }
 
   &__options {

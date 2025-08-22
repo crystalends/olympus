@@ -691,6 +691,7 @@ ol {
 }
 .real-estate-filter__type {
   display: flex;
+  align-content: center;
   gap: 20px;
 }
 .real-estate-filter__select {

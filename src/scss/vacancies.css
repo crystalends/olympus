@@ -922,6 +922,12 @@ ol {
   padding: 8px 20px;
   width: 100%;
 }
+.select__trigger--large {
+  gap: 14px;
+  background-color: transparent;
+  padding: initial;
+  width: fit-content;
+}
 .select__options {
   position: absolute;
   top: calc(100% + 5px);

@@ -536,6 +536,7 @@ ol {
 }
 .real-estate-filter__type {
   display: flex;
+  align-content: center;
   gap: 20px;
 }
 .real-estate-filter__select {
@@ -783,6 +784,12 @@ ol {
   border-color: #BCBABA;
   padding: 8px 20px;
   width: 100%;
+}
+.select__trigger--large {
+  gap: 14px;
+  background-color: transparent;
+  padding: initial;
+  width: fit-content;
 }
 .select__options {
   position: absolute;

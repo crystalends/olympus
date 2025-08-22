@@ -566,8 +566,7 @@
                 </div>
             </div>
             <div class="feedback__item">
-                <div class="feedback-card">
-                </div>
+                <div class="map" id="map"></div>
             </div>
             <div class="feedback__item">
                 <div class="feedback-card">
@@ -807,6 +806,25 @@
     </div>
 </div>
 </body>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [44.6167, 33.5250],
+            zoom: 10
+        });
+
+        var myPlacemark = new ymaps.Placemark([44.6167, 33.5250], {
+            hintContent: 'Севастополь',
+            balloonContent: 'Город Севастополь'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="../src/scripts/swipers/news.js"></script>
 <script src="../src/scripts/swipers/reviews.js"></script>

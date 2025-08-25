@@ -8,6 +8,13 @@
 }
 @font-face {
   font-family: "Grtsk Giga Bkslnt";
+  src: url("./../../public/fonts/GrtskGiga-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grtsk Giga Bkslnt";
   src: url("./../../public/fonts/GrtskGiga-Bold.ttf");
   font-weight: bold;
   font-style: normal;
@@ -1113,7 +1120,7 @@ ol {
 .action__title {
   color: #fff !important;
   font-family: Grtsk Giga Bkslnt, sans-serif;
-  font-weight: normal;
+  font-weight: 300;
 }
 @media (max-width: 720px) {
   .action {

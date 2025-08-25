@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("./../../public/fonts/Suisseintl-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("./../../public/fonts/Suisseintl-Medium.ttf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 @font-face {
   font-family: "Grtsk Giga Bkslnt";
   src: url("./../../public/fonts/GrtskGiga-Regular.ttf");
@@ -40,9 +27,11 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
-  letter-spacing: 0.75px;
-  font-family: "SuisseIntl", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
   font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
 }
 
 html {
@@ -656,8 +645,8 @@ ol {
   font-family: Grtsk Giga Bkslnt, sans-serif;
   font-weight: 500;
 }
-.card__title--suisse-intl-font-family {
-  font-family: "SuisseIntl", sans-serif;
+.card__title--roboto-flex-font-family {
+  font-family: "Roboto Flex", sans-serif;
 }
 .card__title--small {
   font-weight: 400;
